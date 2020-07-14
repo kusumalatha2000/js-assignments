@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id = "trail"></p>
+        <p id = "sample"></p>
+        <script>
+            var d = new Date();
+
+            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById('trail').
+            innerHTML="Today is : " + days[d.getDay()] + ".";
+        </script>
+        <script>
+            var hours = d.getHours();
+            var k = hours > 12 ? "PM" : "AM";
+            var h = hours % 12;
+            var x = h < 10 ? '0'+h : h;
+            var minutes = d.getMinutes();
+            var m = minutes < 10 ? '0'+minutes : minutes;
+            var seconds = d.getSeconds();
+            var s = seconds < 10 ? '0' + seconds : seconds;
+            document.getElementById('sample').
+            innerHTML ="Current time is"+ " : "+ x + k + " : " + m + " : " + s;
+
+        </script>
+    </body>
+</html>
