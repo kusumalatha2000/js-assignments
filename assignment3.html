@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id = "sample"></p>
+        <script>
+            var d = new Date();
+            var dd = (d.getDate() < 10 ? '0' : '') + d.getDate();
+            var mm = (d.getMonth() + 1 < 10 ? '0' : '0') + d.getMonth();
+            var yy = d.getFullYear();
+            document.getElementById('sample').
+            innerHTML="Current Date"+" : " + dd + "-" + mm + "-" + yy + " , " + dd + "/" + mm + "/" + yy;
+        </script>
+    </body>
+</html>
