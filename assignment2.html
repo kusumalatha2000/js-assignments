@@ -1,29 +1,31 @@
 <html>
     <head>
+        <script>
+            var a = "kusuma";
+            console.log("using var :",a);
+            {
+            let a = " narmada";
+            console.log("using let :",a);
+            }
+            console.log(a);
+            const b = "Lakshmi";
+            console.log("using const :",b);
+            {
+            let b = " narmada";
+            console.log("using let :",b);   
+            }
+            console.log("variable value can change but const value cannot change");
+            
+            var num = [1,2,3];
+            console.log(num);
+            num.push(4);
+            console.log(num);
+            const alpha = ["a","b","c"];
+            console.log(alpha);
+            alpha.push("d");
+            console.log(alpha);
+
+            
+        </script>
     </head>
-    <body>
-        <p id = "trail"></p>
-        <p id = "sample"></p>
-        <script>
-            var d = new Date();
-
-            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-            document.getElementById('trail').
-            innerHTML="Today is : " + days[d.getDay()] + ".";
-        </script>
-        <script>
-            var hours = d.getHours();
-            var k = hours > 12 ? "PM" : "AM";
-            var h = hours % 12;
-            var x = h < 10 ? '0'+h : h;
-            var minutes = d.getMinutes();
-            var m = minutes < 10 ? '0'+minutes : minutes;
-            var seconds = d.getSeconds();
-            var s = seconds < 10 ? '0' + seconds : seconds;
-            document.getElementById('sample').
-            innerHTML ="Current time is"+ " : "+ x + k + " : " + m + " : " + s;
-
-        </script>
-        <button onclick = "window.print()">print the contents of current window</button>
-    </body>
 </html>
